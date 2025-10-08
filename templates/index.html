@@ -1,13 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Super prvni sablona</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
-        Je tu sablona
+        
+        Je tu sablona     
         <h1>{{jmeno}}</h1>
         <h2>{{cislo}}</h2>
         <h2>{{barva}}</h2>
         {{neco}}
+        <a href="{% url 'main_article'%}">Odkaz na articles</a>
     </body>
 </html>
